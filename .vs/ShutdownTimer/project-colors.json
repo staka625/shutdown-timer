@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "330c5f02-a6ed-4322-850f-30c5c0d5b929": {
+      "ProjectGuid": "330c5f02-a6ed-4322-850f-30c5c0d5b929",
+      "DisplayName": "ShutdownTimer",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

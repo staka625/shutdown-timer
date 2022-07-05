@@ -25,6 +25,8 @@ namespace ShutdownTimer {
         }
 
         private void buttonShutdown_Click(object sender, EventArgs e) {
+            ProcessStartInfo psi = new ProcessStartInfo();
+            psi.FileName = "shutdown.exe";
             if (radioButtonTimer.Checked) {
                 int hour = int.Parse(textBoxTHour.Text);
                 int min = int.Parse(textBoxTMin.Text);
@@ -32,15 +34,12 @@ namespace ShutdownTimer {
 
                 long time = hour * 3600 + min * 60 + sec;
                 string times = time.ToString();
-                ProcessStartInfo psi = new ProcessStartInfo();
-                psi.FileName = "shutdown.exe";
+
                 if (checkBoxReboot.Checked) {
                     psi.Arguments = "-r -t " + times;
                 } else {
                     psi.Arguments = "-s -t " + times;
                 }
-                psi.CreateNoWindow = true;
-                Process p = Process.Start(psi);
             }
             if (radioButtonDate.Checked) {
                 int year = int.Parse(textBoxDYear.Text);
@@ -54,28 +53,25 @@ namespace ShutdownTimer {
                 long time = (long)ts.TotalSeconds + 1;
                 String times = time.ToString();
 
-                ProcessStartInfo psi = new ProcessStartInfo();
-                psi.FileName = "shutdown.exe";
                 if (checkBoxReboot.Checked) {
                     psi.Arguments = "-r -t " + times;
                 } else {
                     psi.Arguments = "-s -t " + times;
                 }
                 psi.CreateNoWindow = true;
-                Process p = Process.Start(psi);
             }
-            if (radioButtonSoon.Checked) {
-                ProcessStartInfo psi = new ProcessStartInfo();
-                psi.FileName = "shutdown.exe";
+            if (radioButtonSoon.Checked) {   
                 if (checkBoxReboot.Checked) {
                     psi.Arguments = "-r -t 0";
                 } else {
                     psi.Arguments = "-s -t 0";
-                }
-                psi.CreateNoWindow = true;
-                Process p = Process.Start(psi);
+                }              
             }
-
+            if (checkBoxForce.Checked) {
+                psi.Arguments += " -f";
+            }
+            psi.CreateNoWindow = true;
+            Process p = Process.Start(psi);
         }
 
 

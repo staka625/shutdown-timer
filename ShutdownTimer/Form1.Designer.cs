@@ -50,7 +50,9 @@
             this.radioButtonDate = new System.Windows.Forms.RadioButton();
             this.radioButtonTimer = new System.Windows.Forms.RadioButton();
             this.groupBoxSetting = new System.Windows.Forms.GroupBox();
+            this.checkBoxForce = new System.Windows.Forms.CheckBox();
             this.groupBoxShutdown.SuspendLayout();
+            this.groupBoxSetting.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonShutdown
@@ -81,10 +83,10 @@
             // 
             this.checkBoxReboot.AutoSize = true;
             this.checkBoxReboot.Font = new System.Drawing.Font("游ゴシック", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBoxReboot.Location = new System.Drawing.Point(99, 357);
+            this.checkBoxReboot.Location = new System.Drawing.Point(57, 41);
             this.checkBoxReboot.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkBoxReboot.Name = "checkBoxReboot";
-            this.checkBoxReboot.Size = new System.Drawing.Size(283, 24);
+            this.checkBoxReboot.Size = new System.Drawing.Size(281, 24);
             this.checkBoxReboot.TabIndex = 2;
             this.checkBoxReboot.Text = "シャットダウンの代わりに再起動する";
             this.checkBoxReboot.UseVisualStyleBackColor = true;
@@ -160,7 +162,7 @@
             this.labelTSec.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.labelTSec.Location = new System.Drawing.Point(359, 96);
             this.labelTSec.Name = "labelTSec";
-            this.labelTSec.Size = new System.Drawing.Size(127, 20);
+            this.labelTSec.Size = new System.Drawing.Size(126, 20);
             this.labelTSec.TabIndex = 9;
             this.labelTSec.Text = "秒後にシャットダウン";
             // 
@@ -168,7 +170,7 @@
             // 
             this.textBoxDYear.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.textBoxDYear.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.textBoxDYear.Location = new System.Drawing.Point(152, 198);
+            this.textBoxDYear.Location = new System.Drawing.Point(98, 178);
             this.textBoxDYear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxDYear.MaxLength = 4;
             this.textBoxDYear.Name = "textBoxDYear";
@@ -180,7 +182,7 @@
             // 
             this.labelDAD.AutoSize = true;
             this.labelDAD.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelDAD.Location = new System.Drawing.Point(99, 202);
+            this.labelDAD.Location = new System.Drawing.Point(45, 182);
             this.labelDAD.Name = "labelDAD";
             this.labelDAD.Size = new System.Drawing.Size(39, 20);
             this.labelDAD.TabIndex = 14;
@@ -190,7 +192,7 @@
             // 
             this.labelDYear.AutoSize = true;
             this.labelDYear.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelDYear.Location = new System.Drawing.Point(226, 202);
+            this.labelDYear.Location = new System.Drawing.Point(172, 182);
             this.labelDYear.Name = "labelDYear";
             this.labelDYear.Size = new System.Drawing.Size(24, 20);
             this.labelDYear.TabIndex = 15;
@@ -200,7 +202,7 @@
             // 
             this.textBoxDMonth.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.textBoxDMonth.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.textBoxDMonth.Location = new System.Drawing.Point(261, 198);
+            this.textBoxDMonth.Location = new System.Drawing.Point(207, 178);
             this.textBoxDMonth.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxDMonth.MaxLength = 2;
             this.textBoxDMonth.Name = "textBoxDMonth";
@@ -212,7 +214,7 @@
             // 
             this.labelDMonth.AutoSize = true;
             this.labelDMonth.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelDMonth.Location = new System.Drawing.Point(316, 202);
+            this.labelDMonth.Location = new System.Drawing.Point(262, 182);
             this.labelDMonth.Name = "labelDMonth";
             this.labelDMonth.Size = new System.Drawing.Size(24, 20);
             this.labelDMonth.TabIndex = 17;
@@ -222,7 +224,7 @@
             // 
             this.labelDDate.AutoSize = true;
             this.labelDDate.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelDDate.Location = new System.Drawing.Point(400, 202);
+            this.labelDDate.Location = new System.Drawing.Point(346, 182);
             this.labelDDate.Name = "labelDDate";
             this.labelDDate.Size = new System.Drawing.Size(24, 20);
             this.labelDDate.TabIndex = 19;
@@ -232,7 +234,7 @@
             // 
             this.textBoxDDate.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.textBoxDDate.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.textBoxDDate.Location = new System.Drawing.Point(346, 198);
+            this.textBoxDDate.Location = new System.Drawing.Point(292, 178);
             this.textBoxDDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxDDate.MaxLength = 2;
             this.textBoxDDate.Name = "textBoxDDate";
@@ -244,7 +246,7 @@
             // 
             this.labelDHour.AutoSize = true;
             this.labelDHour.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelDHour.Location = new System.Drawing.Point(485, 202);
+            this.labelDHour.Location = new System.Drawing.Point(431, 182);
             this.labelDHour.Name = "labelDHour";
             this.labelDHour.Size = new System.Drawing.Size(24, 20);
             this.labelDHour.TabIndex = 21;
@@ -254,7 +256,7 @@
             // 
             this.textBoxDHour.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.textBoxDHour.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.textBoxDHour.Location = new System.Drawing.Point(435, 198);
+            this.textBoxDHour.Location = new System.Drawing.Point(381, 178);
             this.textBoxDHour.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxDHour.MaxLength = 2;
             this.textBoxDHour.Name = "textBoxDHour";
@@ -266,9 +268,9 @@
             // 
             this.labelDMin.AutoSize = true;
             this.labelDMin.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.labelDMin.Location = new System.Drawing.Point(570, 202);
+            this.labelDMin.Location = new System.Drawing.Point(516, 182);
             this.labelDMin.Name = "labelDMin";
-            this.labelDMin.Size = new System.Drawing.Size(112, 20);
+            this.labelDMin.Size = new System.Drawing.Size(111, 20);
             this.labelDMin.TabIndex = 23;
             this.labelDMin.Text = "分にシャットダウン";
             // 
@@ -276,7 +278,7 @@
             // 
             this.textBoxDMin.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.textBoxDMin.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.textBoxDMin.Location = new System.Drawing.Point(520, 198);
+            this.textBoxDMin.Location = new System.Drawing.Point(466, 178);
             this.textBoxDMin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxDMin.MaxLength = 2;
             this.textBoxDMin.Name = "textBoxDMin";
@@ -286,9 +288,20 @@
             // 
             // groupBoxShutdown
             // 
+            this.groupBoxShutdown.Controls.Add(this.labelDMin);
             this.groupBoxShutdown.Controls.Add(this.radioButtonSoon);
+            this.groupBoxShutdown.Controls.Add(this.textBoxDMin);
             this.groupBoxShutdown.Controls.Add(this.radioButtonDate);
+            this.groupBoxShutdown.Controls.Add(this.labelDHour);
             this.groupBoxShutdown.Controls.Add(this.radioButtonTimer);
+            this.groupBoxShutdown.Controls.Add(this.textBoxDHour);
+            this.groupBoxShutdown.Controls.Add(this.textBoxDDate);
+            this.groupBoxShutdown.Controls.Add(this.labelDDate);
+            this.groupBoxShutdown.Controls.Add(this.textBoxDYear);
+            this.groupBoxShutdown.Controls.Add(this.labelDAD);
+            this.groupBoxShutdown.Controls.Add(this.labelDMonth);
+            this.groupBoxShutdown.Controls.Add(this.labelDYear);
+            this.groupBoxShutdown.Controls.Add(this.textBoxDMonth);
             this.groupBoxShutdown.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.groupBoxShutdown.Location = new System.Drawing.Point(54, 11);
             this.groupBoxShutdown.Name = "groupBoxShutdown";
@@ -300,9 +313,9 @@
             // radioButtonSoon
             // 
             this.radioButtonSoon.AutoSize = true;
-            this.radioButtonSoon.Location = new System.Drawing.Point(42, 244);
+            this.radioButtonSoon.Location = new System.Drawing.Point(42, 230);
             this.radioButtonSoon.Name = "radioButtonSoon";
-            this.radioButtonSoon.Size = new System.Drawing.Size(140, 24);
+            this.radioButtonSoon.Size = new System.Drawing.Size(139, 24);
             this.radioButtonSoon.TabIndex = 3;
             this.radioButtonSoon.TabStop = true;
             this.radioButtonSoon.Text = "今すぐシャットダウン";
@@ -311,7 +324,7 @@
             // radioButtonDate
             // 
             this.radioButtonDate.AutoSize = true;
-            this.radioButtonDate.Location = new System.Drawing.Point(42, 156);
+            this.radioButtonDate.Location = new System.Drawing.Point(42, 137);
             this.radioButtonDate.Name = "radioButtonDate";
             this.radioButtonDate.Size = new System.Drawing.Size(110, 24);
             this.radioButtonDate.TabIndex = 2;
@@ -332,6 +345,8 @@
             // 
             // groupBoxSetting
             // 
+            this.groupBoxSetting.Controls.Add(this.checkBoxForce);
+            this.groupBoxSetting.Controls.Add(this.checkBoxReboot);
             this.groupBoxSetting.Font = new System.Drawing.Font("Yu Gothic UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.groupBoxSetting.Location = new System.Drawing.Point(54, 310);
             this.groupBoxSetting.Name = "groupBoxSetting";
@@ -340,29 +355,29 @@
             this.groupBoxSetting.TabStop = false;
             this.groupBoxSetting.Text = "詳細設定";
             // 
+            // checkBoxForce
+            // 
+            this.checkBoxForce.AutoSize = true;
+            this.checkBoxForce.Font = new System.Drawing.Font("游ゴシック", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkBoxForce.Location = new System.Drawing.Point(466, 41);
+            this.checkBoxForce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.checkBoxForce.Name = "checkBoxForce";
+            this.checkBoxForce.Size = new System.Drawing.Size(192, 24);
+            this.checkBoxForce.TabIndex = 3;
+            this.checkBoxForce.Text = "強制的に処理を実行する";
+            this.checkBoxForce.UseVisualStyleBackColor = true;
+            // 
             // ShutdownTimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 562);
-            this.Controls.Add(this.labelDMin);
-            this.Controls.Add(this.textBoxDMin);
-            this.Controls.Add(this.labelDHour);
-            this.Controls.Add(this.textBoxDHour);
-            this.Controls.Add(this.labelDDate);
-            this.Controls.Add(this.textBoxDDate);
-            this.Controls.Add(this.labelDMonth);
-            this.Controls.Add(this.textBoxDMonth);
-            this.Controls.Add(this.labelDYear);
-            this.Controls.Add(this.labelDAD);
-            this.Controls.Add(this.textBoxDYear);
             this.Controls.Add(this.labelTSec);
             this.Controls.Add(this.textBoxTSec);
             this.Controls.Add(this.labelTMIN);
             this.Controls.Add(this.textBoxTMin);
             this.Controls.Add(this.labelTHour);
             this.Controls.Add(this.textBoxTHour);
-            this.Controls.Add(this.checkBoxReboot);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonShutdown);
             this.Controls.Add(this.groupBoxShutdown);
@@ -374,6 +389,8 @@
             this.Text = "シャットダウンタイマー";
             this.groupBoxShutdown.ResumeLayout(false);
             this.groupBoxShutdown.PerformLayout();
+            this.groupBoxSetting.ResumeLayout(false);
+            this.groupBoxSetting.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,6 +424,7 @@
         private System.Windows.Forms.RadioButton radioButtonDate;
         private System.Windows.Forms.RadioButton radioButtonTimer;
         private System.Windows.Forms.GroupBox groupBoxSetting;
+        private System.Windows.Forms.CheckBox checkBoxForce;
     }
 }
 
